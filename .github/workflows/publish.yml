@@ -5,6 +5,7 @@ on:
       - nuget
   release:
     types: [ published ]
+  workflow_call: 
 
 jobs:
   publish:
