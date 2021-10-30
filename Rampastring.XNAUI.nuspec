@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>devo1929.Rampastring.XNAUI</id>
+    <version>0.0.0</version>
+    <authors>Rampastring</authors>
+    <owners>Rampastring</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/Rampastring/Rampastring.XNAUI</projectUrl>
+    <description>Rampastring XNA/MonoGame UI Library</description>
+    <copyright>Copyright 2021</copyright>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5"/>
+    </dependencies>
+  </metadata>
+</package>

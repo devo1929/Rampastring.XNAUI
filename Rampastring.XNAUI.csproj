@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\AnyCPU\Debug\</OutputPath>
+    <OutputPath>bin\Debug\runtimes\anycpu\lib\net45</OutputPath>
     <DefineConstants>TRACE;DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -25,7 +25,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\AnyCPU\Release\</OutputPath>
+    <OutputPath>bin\Release\runtimes\anycpu\lib\net45</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -33,7 +33,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Windows' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Windows\Debug\</OutputPath>
+    <OutputPath>bin\Debug\runtimes\win\lib\net45</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -41,11 +41,11 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Windows' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Windows\Release\</OutputPath>
+    <OutputPath>bin\Release\runtimes\win\lib\net45</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Windows\Release\Rampastring.XNAUI.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\runtimes\win\lib\net45\Rampastring.XNAUI.XML</DocumentationFile>
     <NoWarn>1591</NoWarn>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
@@ -53,7 +53,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\WindowsGL\Debug</OutputPath>
+    <OutputPath>bin\Debug\runtimes\wingl\lib\net45</OutputPath>
     <DefineConstants>TRACE;DEBUG;WINDOWSGL LINUX</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -61,18 +61,18 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|WindowsGL' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\WindowsGL\Release</OutputPath>
+    <OutputPath>bin\Release\runtimes\wingl\lib\net45</OutputPath>
     <DefineConstants>TRACE;WINDOWSGL LINUX</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\WindowsGL\Release\Rampastring.XNAUI.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\runtimes\wingl\lib\net45\Rampastring.XNAUI.XML</DocumentationFile>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|XNAFramework' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\XNAFramework\Debug</OutputPath>
+    <OutputPath>bin\Debug\runtimes\xna\lib\net45</OutputPath>
     <DefineConstants>TRACE;DEBUG;XNA</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -81,11 +81,11 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|XNAFramework' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\XNAFramework\Release</OutputPath>
+    <OutputPath>bin\Release\runtimes\xna\lib\net45</OutputPath>
     <DefineConstants>TRACE;XNA</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\XNAFramework\Release\Rampastring.XNAUI.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\runtimes\xna\lib\net45\Rampastring.XNAUI.XML</DocumentationFile>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
@@ -101,32 +101,32 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
-          <Private>False</Private>
+        <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553">
+          <HintPath>References\Xna\Microsoft.Xna.Framework.dll</HintPath>
         </Reference>
-        <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
-          <Private>False</Private>
+        <Reference Include="Microsoft.Xna.Framework.Avatar, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553">
+          <HintPath>References\Xna\Microsoft.Xna.Framework.Avatar.dll</HintPath>
         </Reference>
-        <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
-          <Private>False</Private>
+        <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553">
+          <HintPath>References\Xna\Microsoft.Xna.Framework.Game.dll</HintPath>
         </Reference>
-        <Reference Include="Microsoft.Xna.Framework.GamerServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
-          <Private>False</Private>
+        <Reference Include="Microsoft.Xna.Framework.GamerServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553">
+          <HintPath>References\Xna\Microsoft.Xna.Framework.GamerServices.dll</HintPath>
         </Reference>
-        <Reference Include="Microsoft.Xna.Framework.Xact, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
-          <Private>False</Private>
+        <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553">
+          <HintPath>References\Xna\Microsoft.Xna.Framework.Graphics.dll</HintPath>
         </Reference>
-        <Reference Include="Microsoft.Xna.Framework.Video, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
-          <Private>False</Private>
+        <Reference Include="Microsoft.Xna.Framework.Net, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553">
+          <HintPath>References\Xna\Microsoft.Xna.Framework.Net.dll</HintPath>
         </Reference>
-        <Reference Include="Microsoft.Xna.Framework.Avatar, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
-          <Private>False</Private>
+        <Reference Include="Microsoft.Xna.Framework.Storage, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553">
+          <HintPath>References\Xna\Microsoft.Xna.Framework.Storage.dll</HintPath>
         </Reference>
-        <Reference Include="Microsoft.Xna.Framework.Net, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
-          <Private>False</Private>
+        <Reference Include="Microsoft.Xna.Framework.Video, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553">
+          <HintPath>References\Xna\Microsoft.Xna.Framework.Video.dll</HintPath>
         </Reference>
-        <Reference Include="Microsoft.Xna.Framework.Storage, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
-          <Private>False</Private>
+        <Reference Include="Microsoft.Xna.Framework.Xact, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553">
+          <HintPath>References\Xna\Microsoft.Xna.Framework.Xact.dll</HintPath>
         </Reference>
       </ItemGroup>
     </Otherwise>
@@ -135,6 +135,10 @@
     <Reference Include="Rampastring.Tools, Version=1.1.7568.40208, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>References\Rampastring.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="Rampastring.Tools, Version=1.3.1.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>packages\devo1929.Rampastring.Tools.1.3.1-alpha0001\lib\net40\Rampastring.Tools.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -193,6 +197,7 @@
     </Compile>
     <Compile Include="Renderer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\AssemblyGitVersionInfo.cs" Condition="Exists('Properties\AssemblyGitVersionInfo.cs')" />
     <Compile Include="Input\RKeyboard.cs" />
     <Compile Include="TextParseReturnValue.cs" />
     <Compile Include="UISettings.cs" />
@@ -205,9 +210,17 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <Content Include=".github\workflows\publish.yml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105.The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
